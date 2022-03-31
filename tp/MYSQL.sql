@@ -1,3 +1,4 @@
+--SQBD MYSQL
 -- TABLE REGION
 CREATE TABLE REGION
 (
@@ -89,6 +90,7 @@ ALTER table PERSONNE ADD constraint ckEtatEnfant CHECK(nbreEnfant BETWEEN 0 AND 
 ALTER TABLE TRAITEMENT ADD constraint ckEtatsante CHECK(etatSante IN ('gueri','decedé','rechute','traitement','retraitement','disparu'));
 ALTER table TRAITEMENT ADD constraint ckJour CHECK(jour<=sysdate());
 
+--SGBD ORACLE
 
 
 php phpDocumentor.phar run -d C:\wamp\www\eService\documentation -t C:\wamp\www\eService\documentation\doc
